@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="page5.css">
+</head>
+<body>
+    <nav>
+        
+        <a href="index.html">HOME</a>
+        <a href="page2.html">JUNIOR HIGH</a>
+        <a href="page3.html">SENIOR HIGH</a>
+        <a href="page4.html">HISTORY</a>
+        <a href="page5.html">NEWS and ANNOUNCEMENTS</a>
+        <a href="page6.html">CONTACT US</a>
+    </nav>
+    <div style="text-align:center">
+       
+      </div>
+      
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img src="photos/news1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="photos/news2.png" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="photos/event1.png" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+      <div class="column">
+        <img src="photos/event3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+    
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:50%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+</body>
