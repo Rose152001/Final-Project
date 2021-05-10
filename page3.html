@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="page3.css">
+<body>
+
+
+<div class="header">
+  
+    
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="page2.html">JUNIOR HIGH</a>
+        <a href="page3.html">SENIOR HIGH</a>
+        <a href="page4.html">HISTORY</a>
+        <a href="page5.html">News and ANNOUNCEMENTS</a>
+        <a href="page6.html">CONTACT US</a>
+        
+      </nav>
+</div>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="photos/abmlogo1.jpg" alt="The Accountancy, Business and Management (ABM) strand would focus on the </br> basic concepts of financial management, business management, corporate operations, and all things that are accounted for" style="width:300%" margin="5cm" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="photos/h.e logo.jpg" alt="The Home Economics track offers various specializations that can lead to livelihood projects at home. This strand aims to </br> give you job-ready skills that can help you in finding the right employment." style="width:350%"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="photos/humms.jpg" alt="This is for those who are considering taking up journalism, communication arts, liberal arts, education, and other </br> social science-related courses in college.
+    If you take this strand, you could be looking forward to becoming a teacher,</br> a psychologist, a lawyer, a writer, a social worker, or a reporter someday." style="width:300%" margin="5cm" onclick="myFunction(this);">
+  </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:80%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>
